@@ -1,0 +1,291 @@
+:root {
+    /* COLORS */
+    --Aqua:  hsla(177, 68%, 64%, 1);
+    --Orange: hsla(12, 94%, 65%, 1);
+    --Light-Orange: hsla(33, 100%, 70%, 1);
+    --White: hsla(20, 33%, 98%, 1);
+    --Black: hsla(244, 23%, 12%, 1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    outline: 1px solid black;
+    min-height: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* background-image: url(./assets/bg-pattern-1.svg); */
+    background-image: url(./assets/bg-main-mobile.png) ;
+    background-repeat: no-repeat;
+    background-position: 0% -23%;
+    
+    /* z-index: 8; */
+}
+
+header {
+    padding: 2.5rem 1.5rem 0rem 1.5rem ;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 0 .25rem .25rem hsla(0, 0%, 0%, 0.25);
+    color: var(--Black);
+    /* z-index: 2; */
+}
+
+
+.container {
+
+}
+
+.intro {
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.intro__heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.intro__text {
+    line-height: 1.6;
+}
+
+.info {
+    background-color: var(--Black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5rem;
+    border-radius: .8rem;
+}
+
+.info__bg {
+  min-width: 80vw;
+}
+
+.info__phone-illustration {
+    max-width: 56vw;
+    position: absolute;
+    top: -76px;
+}
+
+.info__card {
+    background-color: var(--Orange);
+    display: flex;
+    flex-direction: column;
+    padding: 2.3125rem 3rem;
+    gap: .75rem;
+    border-radius: 0.8rem;
+}
+
+.card__heading {
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card__text {
+    font-size: 1.125rem;
+    color: var(--White);
+    line-height: 1.75;
+}
+
+.card__price {
+    color: var(--White);
+    padding: .8rem 0;
+}
+
+.price__4 {
+    font-size: 4.0625rem;
+    font-weight: 700;
+}
+
+.price__month {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.card__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.buttons__ios-download {
+    padding:1rem 1.2rem;
+    margin:0 0.3em 0.3em 0;
+    border-radius:.7rem;
+    text-decoration:none;
+    font-weight:700;
+    color:#FFFFFF;
+    background-color:var(--Black);
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.buttons__ios-download:hover {
+    background-color: var(--Aqua);
+    cursor: pointer;
+}
+
+.buttons__android-download:hover {
+    background-color: var(--Light-Orange);
+    cursor: pointer;
+}
+
+.buttons__android-download {
+    padding:1rem 1.2rem;
+    margin:0 0.3em 0.3em 0;
+    border-radius:.7rem;
+    text-decoration:none;
+    font-weight:700;
+    color:var(--Black);
+    background-color:var(--White);
+    text-align:center;
+    transition: all 0.2s;
+}
+
+footer {
+    padding: 3.75rem 1.5rem;
+    /* background-color: red; */
+}
+
+.footer-header {
+    color: var(--Black);
+}
+
+.footer-text {
+    padding: 2rem 0 0rem 0;
+    line-height: 2;
+    color: hsla(244, 23%, 12%, 1);
+    opacity: 80%;
+}
+
+/* strong {
+    padding-bottom: 4rem;
+} */
+
+.attribution { font-size: 11px; text-align: center; position: relative; top: 50px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media all and (min-width:768px) {
+    body {
+        background-image: url(./assets/bg-main-tablet.png), url(./assets/bg-pattern-1.svg);
+        background-position: 70% -30%, top -60px right -40px ;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro__heading {
+        max-width: 60%;
+        font-size: 4rem;
+        line-height: 4rem;
+        padding-bottom: 1.75rem;
+    }
+
+    .intro__text {
+        max-width: 65%;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .info {
+        max-width: 95%;
+      
+    }
+
+    .footer-intro {
+        max-width: 50%;
+    }
+
+    /* strong {
+        visibility: hidden;
+    }
+     
+    strong:after {
+        content:'equalizer@example.com'; 
+        visibility: visible;
+        position: relative;
+        inset: -25px 0px 0 -140px;
+       
+    } */
+
+}
+
+@media all and (min-width:1440px) {
+    body {
+        background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-desktop.png);
+        background-position: top -50px right, 65% 100%  ;
+    }
+    
+    header {
+        padding-left: 11.3rem;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8.125rem 10.3125rem;
+    }
+
+    
+
+    .info {
+        height: 37.5rem;
+        width: 80vw;
+        margin-top: 13rem;
+    }
+
+    .info__bg {
+        min-width: 100px;
+        position: absolute;
+        top: -0.1%;
+    }
+
+    .info__phone-illustration {
+        max-width: 22vw;
+        position: absolute;
+        right: 62%;
+        top: -30%;
+
+    }
+
+    .info__card {
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        max-width: 40%;
+    }
+
+    footer{
+        padding-left: 11.3rem;
+    }
+    
+    .footer-intro {
+        display: flex;
+        align-items: flex-start;
+        gap: 8.5625rem;
+    }
+
+    .footer-text {
+        padding: 0;
+    }
+
+    
+}
+
