@@ -166,7 +166,7 @@ footer {
     opacity: 80%;
 }
 
-.social-icons {
+/* .social-icons {
     min-height: 300px;
     min-width: 300px;
 }
@@ -202,12 +202,8 @@ footer {
 .instagram {
     min-height: 60px;
     width: 60px;
-}
-
-
-/* strong {
-    padding-bottom: 4rem;
 } */
+
 
 .attribution { font-size: 11px; text-align: center; position: relative; top: 50px;}
 .attribution a { color: hsl(228, 45%, 44%); }
